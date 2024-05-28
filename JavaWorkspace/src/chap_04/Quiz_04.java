@@ -6,7 +6,7 @@ public class Quiz_04 {
         int max = 30000;
         double discount = 0.5;
         int hour = 4000;
-        double total;
+        int total;
 
         Scanner sc = new Scanner(System.in);
         System.out.println("주차시간을 입력하세요. (ex. 4시간 / 5시간 30분 ...)");
@@ -27,11 +27,11 @@ public class Quiz_04 {
 
         //할인금액 계산
         if(answer.equals("y")) {
-            total *= discount;
+            total = (int) (total * discount);
         }
 
 
 
-        System.out.println(String.format("총 주차요금은 %.0f원입니다.", total));
+        System.out.println(String.format("총 주차요금은 %d원입니다.", total));
     }
 }
